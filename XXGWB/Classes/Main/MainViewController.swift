@@ -41,6 +41,10 @@ class MainViewController: UITabBarController {
     
         NSLog(text)
         
+        let text2 = "没有推送提醒"
+        
+        NSLog(text2)
+        
         
         
         childController.title = title
