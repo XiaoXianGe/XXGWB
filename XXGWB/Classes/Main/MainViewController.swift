@@ -36,6 +36,13 @@ class MainViewController: UITabBarController {
         
         NSLog(nameBundle as! String)
         
+        
+        let text = "测试"
+    
+        NSLog(text)
+        
+        
+        
         childController.title = title
         childController.tabBarItem.image = UIImage(named:imageName)
         let image = imageName + "_highlighted"
