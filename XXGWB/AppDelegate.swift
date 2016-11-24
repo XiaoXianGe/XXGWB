@@ -27,9 +27,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
-
-    
-    
     
 }
+
+
+func XGLog<T>(message:T,fileName:String = #file ,methodName:String = #function,lineNumber :Int = #line) {
+    
+    #if DEBUG
+    
+    let kong = "."
+
+    print(  message  )
+    
+    print( "*** 自定义Log *** : " + ((fileName as NSString).pathComponents.last!) + kong + methodName)
+
+    #endif
+}
+
+
+
 

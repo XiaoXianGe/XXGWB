@@ -11,11 +11,13 @@
 		231A28621DE3E08F007071A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 231A28611DE3E08F007071A7 /* Assets.xcassets */; };
 		231A28701DE3E08F007071A7 /* XXGWBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A286F1DE3E08F007071A7 /* XXGWBTests.swift */; };
 		231A287B1DE3E08F007071A7 /* XXGWBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A287A1DE3E08F007071A7 /* XXGWBUITests.swift */; };
+		234595441DE6DAB500C15769 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 234595421DE6DAB500C15769 /* MainVCSettings.json */; };
+		234595451DE6DAB500C15769 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234595431DE6DAB500C15769 /* NullViewController.swift */; };
+		234595471DE6E5E400C15769 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234595461DE6E5E400C15769 /* ProfileTableViewController.swift */; };
 		23F571BA1DE4275800CE39A9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F571B91DE4275800CE39A9 /* MainViewController.swift */; };
 		23F571BC1DE4277D00CE39A9 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F571BB1DE4277D00CE39A9 /* HomeTableViewController.swift */; };
 		23F571BE1DE427A600CE39A9 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F571BD1DE427A600CE39A9 /* DiscoverTableViewController.swift */; };
 		23F571C21DE427C700CE39A9 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F571C11DE427C700CE39A9 /* MessageTableViewController.swift */; };
-		23F571C41DE427E600CE39A9 /* PorfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F571C31DE427E600CE39A9 /* PorfileTableViewController.swift */; };
 		25C59F60F6A258815200382C /* Pods_XXGWB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9097DDF76551235BCE6E8D /* Pods_XXGWB.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		231A28571DE3E08F007071A7 /* 小火鸡微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小火鸡微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		231A28571DE3E08F007071A7 /* XXGWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXGWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		231A285A1DE3E08F007071A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		231A28611DE3E08F007071A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		231A28661DE3E08F007071A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,11 +49,13 @@
 		231A28761DE3E08F007071A7 /* XXGWBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXGWBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		231A287A1DE3E08F007071A7 /* XXGWBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXGWBUITests.swift; sourceTree = "<group>"; };
 		231A287C1DE3E08F007071A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		234595421DE6DAB500C15769 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		234595431DE6DAB500C15769 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
+		234595461DE6E5E400C15769 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		23F571B91DE4275800CE39A9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		23F571BB1DE4277D00CE39A9 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		23F571BD1DE427A600CE39A9 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		23F571C11DE427C700CE39A9 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
-		23F571C31DE427E600CE39A9 /* PorfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PorfileTableViewController.swift; sourceTree = "<group>"; };
 		76EE35CD47958CCC1291B295 /* Pods-XXGWB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXGWB.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXGWB/Pods-XXGWB.release.xcconfig"; sourceTree = "<group>"; };
 		BE9097DDF76551235BCE6E8D /* Pods_XXGWB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXGWB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7EA6FED90AA79A27389566 /* Pods-XXGWB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXGWB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXGWB/Pods-XXGWB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,7 +102,7 @@
 		231A28581DE3E08F007071A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				231A28571DE3E08F007071A7 /* 小火鸡微博.app */,
+				231A28571DE3E08F007071A7 /* XXGWB.app */,
 				231A286B1DE3E08F007071A7 /* XXGWBTests.xctest */,
 				231A28761DE3E08F007071A7 /* XXGWBUITests.xctest */,
 			);
@@ -132,6 +136,15 @@
 				231A287C1DE3E08F007071A7 /* Info.plist */,
 			);
 			path = XXGWBUITests;
+			sourceTree = "<group>";
+		};
+		234595411DE6DAB500C15769 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				234595421DE6DAB500C15769 /* MainVCSettings.json */,
+				234595431DE6DAB500C15769 /* NullViewController.swift */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		23F571B11DE426FC00CE39A9 /* Classes */ = {
@@ -174,6 +187,7 @@
 		23F571B51DE426FC00CE39A9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				234595411DE6DAB500C15769 /* Resource */,
 				23F571B91DE4275800CE39A9 /* MainViewController.swift */,
 			);
 			path = Main;
@@ -190,7 +204,7 @@
 		23F571B71DE426FC00CE39A9 /* Porfile */ = {
 			isa = PBXGroup;
 			children = (
-				23F571C31DE427E600CE39A9 /* PorfileTableViewController.swift */,
+				234595461DE6E5E400C15769 /* ProfileTableViewController.swift */,
 			);
 			path = Porfile;
 			sourceTree = "<group>";
@@ -239,7 +253,7 @@
 			);
 			name = XXGWB;
 			productName = XXGWB;
-			productReference = 231A28571DE3E08F007071A7 /* 小火鸡微博.app */;
+			productReference = 231A28571DE3E08F007071A7 /* XXGWB.app */;
 			productType = "com.apple.product-type.application";
 		};
 		231A286A1DE3E08F007071A7 /* XXGWBTests */ = {
@@ -332,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234595441DE6DAB500C15769 /* MainVCSettings.json in Resources */,
 				231A28621DE3E08F007071A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,12 +420,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234595471DE6E5E400C15769 /* ProfileTableViewController.swift in Sources */,
 				23F571BC1DE4277D00CE39A9 /* HomeTableViewController.swift in Sources */,
 				231A285B1DE3E08F007071A7 /* AppDelegate.swift in Sources */,
 				23F571BE1DE427A600CE39A9 /* DiscoverTableViewController.swift in Sources */,
 				23F571BA1DE4275800CE39A9 /* MainViewController.swift in Sources */,
 				23F571C21DE427C700CE39A9 /* MessageTableViewController.swift in Sources */,
-				23F571C41DE427E600CE39A9 /* PorfileTableViewController.swift in Sources */,
+				234595451DE6DAB500C15769 /* NullViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,7 +564,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haocaimao.XXGWB;
-				PRODUCT_NAME = "小火鸡微博";
+				PRODUCT_NAME = XXGWB;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -564,7 +580,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haocaimao.XXGWB;
-				PRODUCT_NAME = "小火鸡微博";
+				PRODUCT_NAME = XXGWB;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
