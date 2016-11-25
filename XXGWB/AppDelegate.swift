@@ -17,13 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
-        window?.backgroundColor = UIColor.gray
-        
-        window?.rootViewController = MainViewController()
-        
-        window?.makeKeyAndVisible()
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        
+//        window?.backgroundColor = UIColor.gray
+//        
+//        window?.rootViewController = MainViewController()
+//        
+//        window?.makeKeyAndVisible()
 
         return true
     }
@@ -35,11 +35,11 @@ func XGLog<T>(message:T,fileName:String = #file ,methodName:String = #function,l
     
     #if DEBUG
     
-    let kong = "."
+//    let kong = "."
 
     print(  message  )
     
-    print( "*** 自定义Log *** : " + ((fileName as NSString).pathComponents.last!) + kong + methodName)
+//    print( "*** 自定义Log *** : " + ((fileName as NSString).pathComponents.last!) + kong + methodName)
 
     #endif
 }

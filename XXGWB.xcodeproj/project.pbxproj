@@ -14,6 +14,16 @@
 		234595441DE6DAB500C15769 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 234595421DE6DAB500C15769 /* MainVCSettings.json */; };
 		234595451DE6DAB500C15769 /* NullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234595431DE6DAB500C15769 /* NullViewController.swift */; };
 		234595471DE6E5E400C15769 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234595461DE6E5E400C15769 /* ProfileTableViewController.swift */; };
+		2345954B1DE7E4C200C15769 /* UIButtom+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2345954A1DE7E4C200C15769 /* UIButtom+Extension.swift */; };
+		234595511DE813DD00C15769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234595501DE813DD00C15769 /* Main.storyboard */; };
+		234595531DE81C2D00C15769 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234595521DE81C2D00C15769 /* Home.storyboard */; };
+		234595551DE81C4600C15769 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234595541DE81C4600C15769 /* Message.storyboard */; };
+		234595571DE81C7B00C15769 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234595561DE81C7B00C15769 /* Null.storyboard */; };
+		234595591DE81C9D00C15769 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234595581DE81C9D00C15769 /* Discover.storyboard */; };
+		2345955B1DE81CBC00C15769 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2345955A1DE81CBC00C15769 /* Profile.storyboard */; };
+		2345955D1DE81E7700C15769 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2345955C1DE81E7700C15769 /* BaseTableViewController.swift */; };
+		2345955F1DE822CA00C15769 /* isLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2345955E1DE822CA00C15769 /* isLoginView.swift */; };
+		234595611DE822DF00C15769 /* isLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234595601DE822DF00C15769 /* isLoginView.xib */; };
 		23F571BA1DE4275800CE39A9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F571B91DE4275800CE39A9 /* MainViewController.swift */; };
 		23F571BC1DE4277D00CE39A9 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F571BB1DE4277D00CE39A9 /* HomeTableViewController.swift */; };
 		23F571BE1DE427A600CE39A9 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F571BD1DE427A600CE39A9 /* DiscoverTableViewController.swift */; };
@@ -52,6 +62,16 @@
 		234595421DE6DAB500C15769 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		234595431DE6DAB500C15769 /* NullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullViewController.swift; sourceTree = "<group>"; };
 		234595461DE6E5E400C15769 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		2345954A1DE7E4C200C15769 /* UIButtom+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButtom+Extension.swift"; sourceTree = "<group>"; };
+		234595501DE813DD00C15769 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		234595521DE81C2D00C15769 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../Main/Home.storyboard; sourceTree = "<group>"; };
+		234595541DE81C4600C15769 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../Main/Message.storyboard; sourceTree = "<group>"; };
+		234595561DE81C7B00C15769 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Null.storyboard; path = ../Null.storyboard; sourceTree = "<group>"; };
+		234595581DE81C9D00C15769 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discover.storyboard; path = ../Main/Discover.storyboard; sourceTree = "<group>"; };
+		2345955A1DE81CBC00C15769 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Main/Profile.storyboard; sourceTree = "<group>"; };
+		2345955C1DE81E7700C15769 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		2345955E1DE822CA00C15769 /* isLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = isLoginView.swift; sourceTree = "<group>"; };
+		234595601DE822DF00C15769 /* isLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = isLoginView.xib; sourceTree = "<group>"; };
 		23F571B91DE4275800CE39A9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		23F571BB1DE4277D00CE39A9 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		23F571BD1DE427A600CE39A9 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +163,7 @@
 			children = (
 				234595421DE6DAB500C15769 /* MainVCSettings.json */,
 				234595431DE6DAB500C15769 /* NullViewController.swift */,
+				234595561DE81C7B00C15769 /* Null.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -172,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				23F571BD1DE427A600CE39A9 /* DiscoverTableViewController.swift */,
+				234595581DE81C9D00C15769 /* Discover.storyboard */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -180,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				23F571BB1DE4277D00CE39A9 /* HomeTableViewController.swift */,
+				234595521DE81C2D00C15769 /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -189,6 +212,10 @@
 			children = (
 				234595411DE6DAB500C15769 /* Resource */,
 				23F571B91DE4275800CE39A9 /* MainViewController.swift */,
+				2345955C1DE81E7700C15769 /* BaseTableViewController.swift */,
+				234595501DE813DD00C15769 /* Main.storyboard */,
+				2345955E1DE822CA00C15769 /* isLoginView.swift */,
+				234595601DE822DF00C15769 /* isLoginView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -197,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				23F571C11DE427C700CE39A9 /* MessageTableViewController.swift */,
+				234595541DE81C4600C15769 /* Message.storyboard */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -205,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				234595461DE6E5E400C15769 /* ProfileTableViewController.swift */,
+				2345955A1DE81CBC00C15769 /* Profile.storyboard */,
 			);
 			path = Porfile;
 			sourceTree = "<group>";
@@ -212,6 +241,7 @@
 		23F571B81DE426FC00CE39A9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2345954A1DE7E4C200C15769 /* UIButtom+Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -346,8 +376,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234595511DE813DD00C15769 /* Main.storyboard in Resources */,
 				234595441DE6DAB500C15769 /* MainVCSettings.json in Resources */,
+				2345955B1DE81CBC00C15769 /* Profile.storyboard in Resources */,
+				234595551DE81C4600C15769 /* Message.storyboard in Resources */,
 				231A28621DE3E08F007071A7 /* Assets.xcassets in Resources */,
+				234595611DE822DF00C15769 /* isLoginView.xib in Resources */,
+				234595531DE81C2D00C15769 /* Home.storyboard in Resources */,
+				234595591DE81C9D00C15769 /* Discover.storyboard in Resources */,
+				234595571DE81C7B00C15769 /* Null.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,10 +457,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2345955D1DE81E7700C15769 /* BaseTableViewController.swift in Sources */,
 				234595471DE6E5E400C15769 /* ProfileTableViewController.swift in Sources */,
 				23F571BC1DE4277D00CE39A9 /* HomeTableViewController.swift in Sources */,
 				231A285B1DE3E08F007071A7 /* AppDelegate.swift in Sources */,
+				2345955F1DE822CA00C15769 /* isLoginView.swift in Sources */,
 				23F571BE1DE427A600CE39A9 /* DiscoverTableViewController.swift in Sources */,
+				2345954B1DE7E4C200C15769 /* UIButtom+Extension.swift in Sources */,
 				23F571BA1DE4275800CE39A9 /* MainViewController.swift in Sources */,
 				23F571C21DE427C700CE39A9 /* MessageTableViewController.swift in Sources */,
 				234595451DE6DAB500C15769 /* NullViewController.swift in Sources */,
@@ -561,7 +601,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 54H5772K23;
 				INFOPLIST_FILE = XXGWB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haocaimao.XXGWB;
 				PRODUCT_NAME = XXGWB;
@@ -577,7 +617,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 54H5772K23;
 				INFOPLIST_FILE = XXGWB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haocaimao.XXGWB;
 				PRODUCT_NAME = XXGWB;
