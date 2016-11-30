@@ -11,7 +11,7 @@ import UIKit
 class BaseTableViewController: UITableViewController {
     
     //重写父类方法，判断是否登录，如果没有登录，显示登录的界面，如果登录了，则显示微博数据
-    var isLogin = false
+    var isLogin = true
     
     //访客试图
     var LoginView : isLoginView?
@@ -22,13 +22,33 @@ class BaseTableViewController: UITableViewController {
         
     }
   
-    
+    //如果还没有登录
     func ifIsLoginState()  {
         
         LoginView = isLoginView.setUpLoginView()
-
+        
         view = LoginView
+        
+        LoginView?.loginBtn.addTarget(self, action: #selector(BaseTableViewController.loginBtnClick(btn:)), for: UIControlEvents.touchUpInside)
+        
+        LoginView?.registerBtn.addTarget(self, action: #selector(BaseTableViewController.registerBtnClick(btn:)), for: UIControlEvents.touchUpInside)
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: UIBarButtonItemStyle.plain, target: self, action: #selector(BaseTableViewController.registerBtnClick(btn:)))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: UIBarButtonItemStyle.plain, target: self, action: #selector(BaseTableViewController.loginBtnClick(btn:)))
     }
+    
+    @objc private func loginBtnClick(btn:UIButton){
+        
+        XGLog(message: btn);
+        
+    }
+    
+    @objc private func registerBtnClick(btn :UIButton)
+    {
+        XGLog(message: btn);
+    }
+    
     
     
     

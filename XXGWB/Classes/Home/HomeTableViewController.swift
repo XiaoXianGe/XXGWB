@@ -14,10 +14,15 @@ class HomeTableViewController: BaseTableViewController {
         super.viewDidLoad()
 
        //判读用户是否登录
-        if !isLogin
-        {
+        if !isLogin{
             LoginView?.setUpLoginViewInfo(imageName: nil , title: "关注一些人，回这里看看有什么惊喜")
             return
         }
+        
+        
+        
+        
+        
+        
     }
 }

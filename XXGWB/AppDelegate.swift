@@ -24,13 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = MainViewController()
 //        
 //        window?.makeKeyAndVisible()
+        
+        UINavigationBar.appearance().tintColor = UIColor.orange
 
         return true
     }
     
 }
 
-
+//自定义打印方法-XGLog
 func XGLog<T>(message:T,fileName:String = #file ,methodName:String = #function,lineNumber :Int = #line) {
     
     #if DEBUG

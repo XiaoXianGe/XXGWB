@@ -9,11 +9,9 @@
 import UIKit
 
 class isLoginView: UIView {
-    //注册按钮
-    @IBOutlet weak var registerBtn: UIButton!
-    //登录按钮
-    @IBOutlet weak var loginBtn: UIButton!
     
+    @IBOutlet weak var registerBtn: UIButton!//注册按钮
+    @IBOutlet weak var loginBtn: UIButton!//登录按钮
     @IBOutlet weak var rotationImageView: UIImageView!
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -45,9 +43,11 @@ class isLoginView: UIView {
         anim.duration = 8.0
         anim.repeatCount = MAXFLOAT
         
+        //view消失，会停止动画，想持续执行的话要设置
+        anim.isRemovedOnCompletion = false
+        
         //将动画添加到图层上
         rotationImageView.layer.add(anim, forKey: nil)
-        
         
     }
     

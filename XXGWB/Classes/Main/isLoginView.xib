@@ -70,8 +70,8 @@
             </constraints>
             <connections>
                 <outlet property="iconImageView" destination="DnD-Np-CTF" id="L4T-Ij-qxj"/>
-                <outlet property="loginBtn" destination="TPa-fx-QV9" id="f25-y2-YnL"/>
-                <outlet property="registerBtn" destination="WVH-SK-zgX" id="sWS-P6-Let"/>
+                <outlet property="loginBtn" destination="TPa-fx-QV9" id="U2e-81-bVT"/>
+                <outlet property="registerBtn" destination="WVH-SK-zgX" id="eF0-gp-iIc"/>
                 <outlet property="rotationImageView" destination="2g2-IK-uc4" id="hQJ-EB-qIh"/>
                 <outlet property="titleLabel" destination="0Yy-u3-mbU" id="1lG-06-tEe"/>
             </connections>
