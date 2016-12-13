@@ -10,12 +10,13 @@ import UIKit
 
 class BaseTableViewController: UITableViewController {
     
-    //重写父类方法，判断是否登录，如果没有登录，显示登录的界面，如果登录了，则显示微博数据
+    //原理：重写父类方法，判断是否登录，如果没有登录，显示登录的界面，如果登录了，则显示微博数据
     var isLogin = true
     
-    //访客试图
+    //未登录的View
     var LoginView : isLoginView?
 
+    //重写父类loadView方法
     override func loadView() {
         
         isLogin ? super.loadView(): ifIsLoginState()
