@@ -36,9 +36,29 @@ class HomeTableViewController: BaseTableViewController {
         navigationItem.titleView = titleBtn
     }
     
+    ///点击标题
     @objc private func titleBtnClick(titleBtn:TitleButton){
         XGLog(message: "titleBtnClick")
+        
         titleBtn.isSelected = !titleBtn.isSelected
+
+        
+        //创建pop的标题菜单
+        let sb = UIStoryboard(name: "Popover", bundle: nil)
+        
+        guard let menuView = sb.instantiateInitialViewController() else
+        {
+            return
+        }
+        //自定义转场动画
+        
+        //代理
+        menuView.transitioningDelegate = self
+        //样式
+        menuView.modalPresentationStyle = UIModalPresentationStyle.custom
+
+        present(menuView, animated: true, completion: nil)
+
     }
     @objc private func leftBtnClick(){
         XGLog(message: "left")
@@ -47,3 +67,49 @@ class HomeTableViewController: BaseTableViewController {
         XGLog(message: "right")
     }
 }
+
+extension HomeTableViewController :UIViewControllerTransitioningDelegate
+{
+    //返回一个转场动画的对象
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController?
+    {
+        return XXGPresentationController(presentedViewController: presented, presenting: presenting)
+    }
+    
+    //设置开始转场的如何出现
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning?
+    {
+        return self
+    }
+    //设置如何消失消失
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning?
+    {
+        return self
+    }
+    
+}
+
+extension HomeTableViewController : UIViewControllerAnimatedTransitioning
+{
+    //告诉系统展示和消失的动画时长
+    //暂时用不上
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval
+    {
+        return 998
+    }
+    
+    //专门用于管理model如何展示和消失的，展示和消失都会调用该方法
+    //只要实现了这个方法，就不会再有系统的modal动画，所有的动画都需要我们自己添加
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning)
+    {
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+}
+
