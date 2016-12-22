@@ -66,6 +66,12 @@ class HomeTableViewController: BaseTableViewController {
     @objc private func rightBtnClick(){
         XGLog(message: "right")
     }
+    //判断标题pop是否被点击
+    var isPresent = false
+    lazy var animatorManager = XXGPresentationManager()
+    
+    
+    
 }
 
 extension HomeTableViewController :UIViewControllerTransitioningDelegate
@@ -79,11 +85,13 @@ extension HomeTableViewController :UIViewControllerTransitioningDelegate
     //设置开始转场的如何出现
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning?
     {
+        isPresent = true
         return self
     }
     //设置如何消失消失
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning?
     {
+        isPresent = false
         return self
     }
     
@@ -102,9 +110,40 @@ extension HomeTableViewController : UIViewControllerAnimatedTransitioning
     //只要实现了这个方法，就不会再有系统的modal动画，所有的动画都需要我们自己添加
     public func animateTransition(using transitionContext: UIViewControllerContextTransitioning)
     {
-        
-        
-        
+        if isPresent {
+            
+            guard let toView = transitionContext.view(forKey: UITransitionContextViewKey.to) else{
+                return
+            }
+            
+            
+            
+            //将需要弹出的试图添加到containerView上
+            transitionContext.containerView.addSubview(toView)
+            //先将试图变为原来的百分百
+            toView.transform = CGAffineTransform(scaleX: 1.0, y: 0.0)
+            //设置锚点
+            toView.layer.anchorPoint = CGPoint(x: 0.5, y: 0.0)
+            //执行动画
+            UIView.animate(withDuration: 0.2, animations: {() -> Void in toView.transform = CGAffineTransform.identity}){(_) -> Void in
+                //必须结束动画
+                transitionContext.completeTransition(true)
+            }
+            
+            
+        }else{
+            
+            guard let fromView = transitionContext.view(forKey: UITransitionContextViewKey.from) else {
+                return
+            }
+            
+            UIView.animate(withDuration: 0.2, animations: { () -> Void in
+                fromView.transform = CGAffineTransform(scaleX: 1.0, y: 0.0001)
+            }, completion: { (_) in
+                transitionContext.completeTransition(true)
+            })
+            
+        }
         
         
         

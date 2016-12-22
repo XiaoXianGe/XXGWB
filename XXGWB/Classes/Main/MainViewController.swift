@@ -37,7 +37,7 @@ class MainViewController: UITabBarController {
 
         btn.sizeToFit()
         
-        btn .addTarget(self , action: #selector(MainViewController.composeButtnClick), for: UIControlEvents.touchUpInside)
+        btn.addTarget(self , action: #selector(MainViewController.composeButtnClick), for: UIControlEvents.touchUpInside)
         
         return btn
     }()

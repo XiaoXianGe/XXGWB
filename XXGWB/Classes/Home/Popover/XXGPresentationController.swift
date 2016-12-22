@@ -14,9 +14,33 @@ class XXGPresentationController: UIPresentationController {
     //用于布局转场动画弹出的控件
     override func containerViewWillLayoutSubviews() {
         
+        presentedView?.frame = CGRect(x: 90, y: 50, width: 200 , height: 250)
         
-        presentedView?.frame = CGRect(x: 100, y: 55, width: 200 , height: 250)
+        coverButton.addTarget(self, action:#selector(XXGPresentationController.clickCoverBtn), for: UIControlEvents.touchUpInside)
+        
+        containerView?.insertSubview(coverButton, at: 0)
     }
+    
+    //MARK : - 内部控制方法
+    @objc private func clickCoverBtn() {
+       
+        presentedViewController.dismiss(animated: true, completion: nil)
+        
+        
+    }
+    
+    //MARK : - 懒加载
+    private var coverButton : UIButton = {
+        
+        let btn  =  UIButton()
+        
+        btn.frame = UIScreen.main.bounds
+        btn.backgroundColor = UIColor.clear
+        
+        return btn
+        
+    }()
+    
     
     
 }
