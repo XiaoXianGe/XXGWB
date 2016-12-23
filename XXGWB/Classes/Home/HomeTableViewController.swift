@@ -69,9 +69,7 @@ class HomeTableViewController: BaseTableViewController {
     //判断标题pop是否被点击
     var isPresent = false
     lazy var animatorManager = XXGPresentationManager()
-    
-    
-    
+
 }
 
 extension HomeTableViewController :UIViewControllerTransitioningDelegate
