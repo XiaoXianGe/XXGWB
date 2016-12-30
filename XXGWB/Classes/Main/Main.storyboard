@@ -11,17 +11,11 @@
         <!--Main View Controller-->
         <scene sceneID="pb6-tA-ufF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ape-vA-YQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="ps1-ml-Ycr" customClass="MainViewController" customModule="XXGWB" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="1R5-St-g9C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="HUW-VD-aLE" kind="relationship" relationship="viewControllers" id="xBI-Ws-C3Q"/>
@@ -31,6 +25,7 @@
                         <segue destination="VHX-B1-wtI" kind="relationship" relationship="viewControllers" id="rg2-Qa-UwW"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ape-vA-YQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1338" y="260"/>
         </scene>
