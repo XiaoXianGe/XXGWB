@@ -118,7 +118,7 @@ class QRCodeViewController: UIViewController {
     }()
     
     //预览图层
-    private lazy var previewLayer : AVCaptureVideoPreviewLayer = {
+    lazy var previewLayer : AVCaptureVideoPreviewLayer = {
        
         let layer = AVCaptureVideoPreviewLayer(session: self.session)
         return layer!
@@ -147,9 +147,12 @@ extension QRCodeViewController : AVCaptureMetadataOutputObjectsDelegate
     //只要扫描到结果就会调用
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!)
     {
+        //1、显示结果
         customLabel.text = (metadataObjects.last as AnyObject).stringValue
-        
     }
+    
+    
+    
 }
 
 
