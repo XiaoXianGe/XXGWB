@@ -26,7 +26,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4AZ-9m-S1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-799" y="183"/>
+            <point key="canvasLocation" x="-785" y="119"/>
         </scene>
         <!--扫一扫-->
         <scene sceneID="ZAT-bQ-le8">
@@ -110,6 +110,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="containerHeightCons" destination="tPW-AM-ehf" id="DVB-Vg-4Oz"/>
+                        <outlet property="customContainerView" destination="VdM-eT-jH4" id="OgZ-R5-Mmt"/>
                         <outlet property="customLabel" destination="SU1-Fg-6jd" id="0W9-Ys-j4E"/>
                         <outlet property="customTabBar" destination="Tg0-hx-lFI" id="AmA-Be-X48"/>
                         <outlet property="scanLineCons" destination="qHx-o9-PCH" id="xiw-sg-AN9"/>

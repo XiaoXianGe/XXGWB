@@ -11,6 +11,8 @@ import AVFoundation
 
 class QRCodeViewController: UIViewController {
 
+    //扫描容器
+    @IBOutlet weak var customContainerView: UIView!
     //底部工具条
     @IBOutlet weak var customTabBar: UITabBar!
     
@@ -90,13 +92,25 @@ class QRCodeViewController: UIViewController {
         }
     }
     
+    // MARK: --- 关闭扫描和打开相册
     //关闭
     @IBAction func closeQRCodeClick(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
     //相册
     @IBAction func photoClick(_ sender: UIBarButtonItem) {
-        XGLog(message: "相册")
+        
+        //打开相册
+        if !UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
+            return
+        }
+        
+        //创建相册控制器
+        let imagePickerVC = UIImagePickerController()
+        imagePickerVC.delegate = self
+        
+        //弹出相册控制器
+        present(imagePickerVC, animated: true, completion: nil)
         
     }
 
@@ -114,7 +128,20 @@ class QRCodeViewController: UIViewController {
     
     ///输出对象
     private lazy var output: AVCaptureMetadataOutput = {
-       return AVCaptureMetadataOutput()
+        let out = AVCaptureMetadataOutput()
+        
+        //1、获取屏幕的frame
+        let viewRect = self.view.frame
+        //2、获取扫描容器的frame
+        let containerRect = self.customContainerView.frame
+        let x = containerRect.origin.y / viewRect.height
+        let y = containerRect.origin.x / viewRect.width
+        let width = containerRect.height / viewRect.height
+        let height = containerRect.width / viewRect.width
+        
+        out.rectOfInterest = CGRect(x: x, y: y, width: width, height: height)
+        
+        return out
     }()
     
     //预览图层
@@ -123,6 +150,33 @@ class QRCodeViewController: UIViewController {
         let layer = AVCaptureVideoPreviewLayer(session: self.session)
         return layer!
     }()
+}
+
+extension QRCodeViewController : UINavigationControllerDelegate,UIImagePickerControllerDelegate
+{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        XGLog(message: info)
+        
+        guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+            return
+        }
+        guard let ciImage = CIImage(image:image)  else {
+            return
+        }
+        
+        //从选中的图片中读取二维码数据
+        //1、创建忆哥探测器
+        let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy : CIDetectorAccuracyLow])
+        //2、利用探测器识别二维码
+        let results = detector?.features(in: ciImage)
+        //3、取出探测器的数据
+        for result in results! {
+            XGLog(message: (result as! CIQRCodeFeature).messageString)
+        }
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension QRCodeViewController : UITabBarDelegate
@@ -138,7 +192,6 @@ extension QRCodeViewController : UITabBarDelegate
         
         //重新开始动画
         startAnimation()
-
     }
 }
 
